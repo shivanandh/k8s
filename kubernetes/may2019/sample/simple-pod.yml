@@ -4,7 +4,8 @@ metadata:
   name: simple-pod
 spec:
   containers:
-  - name: nginx container
+  - name: nginx
     image: nginx
     ports:
     - containerPort: 80
+    - nodeport: 8087
